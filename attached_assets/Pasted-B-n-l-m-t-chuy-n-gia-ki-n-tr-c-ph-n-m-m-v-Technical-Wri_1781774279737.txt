@@ -1,0 +1,25 @@
+Bạn là một chuyên gia kiến trúc phần mềm và Technical Writer chuyên nghiệp. Hãy viết một file `README.md` hoàn chỉnh, chi tiết và chuyên nghiệp cho dự án mới của tôi dựa trên các thông tin cấu trúc và business logic dưới đây.
+
+---
+[THÔNG TIN DỰ ÁN]
+- Tên dự án: GetKenka (Tên miền: getkenka.com)
+- Mô hình kinh doanh: For-profit (Vì lợi nhuận). Hệ thống tiếp nhận yêu cầu tham gia và bán quyền thành viên vĩnh viễn (Lifetime Membership) để vào một nhóm kín tên là GetKenka.
+- Tech Stack: Next.js (App Router), TypeScript, Tailwind CSS.
+- ORM: Sử dụng một ORM chung (như Drizzle ORM hoặc Prisma) đóng vai trò lớp trừu tượng (Abstraction Layer).
+- Chiến lược Database linh hoạt (Dynamic Database Architecture): Hệ thống cấu hình động qua biến môi trường (.env). Ở môi trường Local/Staging có thể linh hoạt cấu hình chạy MySQL hoặc PostgreSQL độc lập. Ở môi trường Production, hệ thống sẽ chạy chính thức trên PostgreSQL có cấu hình Replica (Read/Write Split).
+
+---
+[YÊU CẦU CẤU TRÚC FILE README.md]
+Hãy sử dụng định dạng Markdown chuẩn, chuyên nghiệp, có sử dụng emoji hợp lý, phân chia các heading rõ ràng và bao gồm các phần sau:
+
+1. **Project Overview:** Giới thiệu ngắn gọn, súc tích về GetKenka và mô hình bán Lifetime Membership cho nhóm kín.
+2. **Tech Stack & Architecture:** - Liệt kê các công nghệ sử dụng.
+   - Giải thích rõ cơ chế Dynamic Database (chuyển đổi linh hoạt giữa MySQL/Postgres qua .env và chạy Postgres Replica ở Prod) nhờ vào lớp ORM.
+   - Trình bày kiến trúc phân lớp (Layered Architecture) tách biệt Client UI (React Server Components + Client Components) và Server-side Business Logic (Services Layer).
+3. **Project Directory Structure:** Vẽ một sơ đồ cây thư mục (Folder Tree) chuẩn Clean Architecture cho Next.js App Router (bao gồm các thư mục chính như: `src/app`, `src/core/services`, `src/db/schema.ts`, `src/db/client.ts`, `src/components`, `src/shared`).
+4. **Essential Features:** Viết chi tiết về 2 tính năng xương sống dưới góc nhìn kỹ thuật:
+   - *Authenticated User Login:* Đăng nhập bảo mật (Email/Password & Social), quản lý Session qua HttpOnly Cookie, phân quyền thành viên bằng Next.js Middleware.
+   - *Payment Processing:* Tích hợp cổng thanh toán (như Stripe/PayOS), xử lý Webhook tự động thời gian thực, đảm bảo Idempotency và chạy DB Transaction để kích hoạt quyền Lifetime Member ngay khi thanh toán thành công.
+5. **Environment Setup Example:** Cho một đoạn code ví dụ về file `.env.example` chứa biến `DATABASE_TYPE` (postgres/mysql) và các url connection.
+
+Hãy viết toàn bộ nội dung file README.md bằng Tiếng Việt, trình bày mạch lạc, dễ đọc để làm tài liệu chuẩn cho đội ngũ phát triển.
