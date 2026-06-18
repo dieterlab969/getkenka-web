@@ -363,7 +363,7 @@ LIFETIME_MEMBERSHIP_PRICE=9900
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/dieterlab969/getkenka-web.git
+git clone https://github.com/dieterlab969/getkenka-web.git getkenka
 cd getkenka
 
 # 2. Install dependencies
