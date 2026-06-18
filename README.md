@@ -1,4 +1,4 @@
-# 🥊 GetKenka
+# 🥊 GETKENKA
 
 > **getkenka.com** — A private membership community powered by a modern, scalable full-stack architecture.
 
@@ -6,11 +6,11 @@
 
 ## 📖 Project Overview
 
-**GetKenka** is a for-profit platform that manages and sells **Lifetime Memberships** to an exclusive private group. The system handles the full membership lifecycle — from public landing and membership application, through secure payment processing, to gated member access.
+**GETKENKA** is a for-profit platform that manages and sells **Lifetime Memberships** to an exclusive private group. The system handles the full membership lifecycle — from public landing and membership application, through secure payment processing, to gated member access.
 
 The business model is straightforward:
 
-1. A visitor discovers GetKenka and submits a membership request.
+1. A visitor discovers GETKENKA and submits a membership request.
 2. They are directed to a one-time **Lifetime Membership** payment.
 3. Upon successful payment, their account is instantly activated with full member privileges.
 4. All future logins are verified against their membership status before granting access to the private group.
@@ -37,7 +37,7 @@ The platform is built for reliability, security, and operational simplicity — 
 
 ### 🗄️ Dynamic Database Architecture
 
-GetKenka uses a **runtime-configurable database** pattern. The active database engine is determined entirely by the `DATABASE_TYPE` environment variable — no code changes required to switch between MySQL and PostgreSQL.
+GETKENKA uses a **runtime-configurable database** pattern. The active database engine is determined entirely by the `DATABASE_TYPE` environment variable — no code changes required to switch between MySQL and PostgreSQL.
 
 ```
 DATABASE_TYPE=postgres  →  Uses POSTGRES_URL
@@ -68,7 +68,7 @@ The ORM (Drizzle) acts as the **Abstraction Layer** between business logic and t
 
 ### 🏛️ Layered Architecture
 
-GetKenka separates concerns into two primary zones:
+GETKENKA separates concerns into two primary zones:
 
 #### 1. Client UI Layer — `src/components` + `src/app`
 
@@ -180,7 +180,7 @@ getkenka/
 
 ### 1. 🔐 Authenticated User Login
 
-GetKenka implements a multi-layer authentication and authorization system:
+GETKENKA implements a multi-layer authentication and authorization system:
 
 #### Authentication (Who are you?)
 
@@ -388,4 +388,4 @@ The application will be available at `http://localhost:3000`.
 
 This project is proprietary software. All rights reserved. Unauthorized copying, distribution, or modification is strictly prohibited.
 
-© 2026 GetKenka — [getkenka.com](https://getkenka.com)
+© 2026 GETKENKA — [getkenka.com](https://getkenka.com)
