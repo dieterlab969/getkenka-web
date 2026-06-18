@@ -1,0 +1,9 @@
+/*=============================
+	Fact Counter One Css
+===============================*/
+.fact-counter-one {
+    position: relative;
+    display: block;
+    padding: 0px 0px 90px;
+    z-index: 1;
+}
